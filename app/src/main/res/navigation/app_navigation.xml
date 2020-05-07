@@ -46,4 +46,9 @@
             android:id="@+id/action_missFragment_to_quizFragment"
             app:destination="@id/quizFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/rulesFragment"
+        android:name="com.android.uraall.soccerquiz.RulesFragment"
+        android:label="fragment_rules"
+        tools:layout="@layout/fragment_rules" />
 </navigation>
