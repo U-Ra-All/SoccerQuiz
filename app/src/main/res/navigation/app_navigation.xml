@@ -51,4 +51,9 @@
         android:name="com.android.uraall.soccerquiz.RulesFragment"
         android:label="fragment_rules"
         tools:layout="@layout/fragment_rules" />
+    <fragment
+        android:id="@+id/someFragment"
+        android:name="com.android.uraall.soccerquiz.SomeFragment"
+        android:label="fragment_some"
+        tools:layout="@layout/fragment_some" />
 </navigation>
