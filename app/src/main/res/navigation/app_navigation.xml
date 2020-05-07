@@ -20,19 +20,30 @@
         tools:layout="@layout/fragment_quiz" >
         <action
             android:id="@+id/action_quizFragment_to_goalFragment"
-            app:destination="@id/goalFragment" />
+            app:destination="@id/goalFragment"
+            app:popUpTo="@id/quizFragment"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_quizFragment_to_missFragment"
-            app:destination="@id/missFragment" />
+            app:destination="@id/missFragment"
+            app:popUpTo="@id/welcomeScreenFragment" />
     </fragment>
     <fragment
         android:id="@+id/goalFragment"
         android:name="com.android.uraall.soccerquiz.GoalFragment"
         android:label="fragment_goal"
-        tools:layout="@layout/fragment_goal" />
+        tools:layout="@layout/fragment_goal" >
+        <action
+            android:id="@+id/action_goalFragment_to_quizFragment"
+            app:destination="@id/quizFragment" />
+    </fragment>
     <fragment
         android:id="@+id/missFragment"
         android:name="com.android.uraall.soccerquiz.MissFragment"
         android:label="fragment_miss"
-        tools:layout="@layout/fragment_miss" />
+        tools:layout="@layout/fragment_miss" >
+        <action
+            android:id="@+id/action_missFragment_to_quizFragment"
+            app:destination="@id/quizFragment" />
+    </fragment>
 </navigation>
