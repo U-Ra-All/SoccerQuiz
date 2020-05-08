@@ -35,7 +35,8 @@
         tools:layout="@layout/fragment_goal" >
         <action
             android:id="@+id/action_goalFragment_to_quizFragment"
-            app:destination="@id/quizFragment" />
+            app:destination="@id/quizFragment"
+            app:popUpTo="@id/welcomeScreenFragment" />
     </fragment>
     <fragment
         android:id="@+id/missFragment"
@@ -44,16 +45,8 @@
         tools:layout="@layout/fragment_miss" >
         <action
             android:id="@+id/action_missFragment_to_quizFragment"
-            app:destination="@id/quizFragment" />
+            app:destination="@id/quizFragment"
+            app:popUpTo="@id/quizFragment"
+            app:popUpToInclusive="true" />
     </fragment>
-    <fragment
-        android:id="@+id/rulesFragment"
-        android:name="com.android.uraall.soccerquiz.RulesFragment"
-        android:label="fragment_rules"
-        tools:layout="@layout/fragment_rules" />
-    <fragment
-        android:id="@+id/someFragment"
-        android:name="com.android.uraall.soccerquiz.SomeFragment"
-        android:label="fragment_some"
-        tools:layout="@layout/fragment_some" />
 </navigation>
