@@ -54,4 +54,9 @@
         android:name="com.android.uraall.soccerquiz.RulesFragment"
         android:label="fragment_rules"
         tools:layout="@layout/fragment_rules" />
+    <fragment
+        android:id="@+id/ballFeaturesFragment"
+        android:name="com.android.uraall.soccerquiz.BallFeaturesFragment"
+        android:label="fragment_ball_features"
+        tools:layout="@layout/fragment_ball_features" />
 </navigation>
