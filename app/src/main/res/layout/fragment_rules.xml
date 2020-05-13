@@ -11,6 +11,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="Rules Of The Game"
-        android:textSize="48dp" />
+        android:textSize="48sp" />
 
 </FrameLayout>

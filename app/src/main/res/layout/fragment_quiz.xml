@@ -61,7 +61,7 @@
                 android:fontFamily="@font/bangers"
                 android:text="Soccer Quiz"
                 android:textColor="@android:color/white"
-                android:textSize="48dp"
+                android:textSize="48sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.497"
                 app:layout_constraintStart_toStartOf="parent"
