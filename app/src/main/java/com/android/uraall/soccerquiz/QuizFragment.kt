@@ -1,6 +1,7 @@
 package com.android.uraall.soccerquiz
 
 import android.os.Bundle
+import android.os.Handler
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.appcompat.app.AppCompatActivity
@@ -86,19 +87,37 @@ class QuizFragment : Fragment() {
 
                     } else {
 
-                        // Go to goalFragment
-                        view.findNavController().navigate(
-                            R.id.action_quizFragment_to_goalFragment
-                        )
+                        binding.ballImageView.animate()
+                            .translationXBy(700f)
+                            .rotation(3600f)
+                            .duration = 3000
+
+                        Handler().postDelayed({
+                            // Go to goalFragment
+                            view.findNavController().navigate(
+                                R.id.action_quizFragment_to_goalFragment
+                            )
+                        }, 3000)
+
+
 
                     }
 
                 } else {
 
-                    // Go to missFragment
-                    view.findNavController().navigate(
-                        R.id.action_quizFragment_to_missFragment
-                    )
+                    binding.ballImageView.animate()
+                        .translationXBy(700f)
+                        .rotation(3600f)
+                        .duration = 3000
+
+                    Handler().postDelayed({
+                        // Go to missFragment
+                        view.findNavController().navigate(
+                            R.id.action_quizFragment_to_missFragment
+                        )
+                    }, 3000)
+
+
 
                 }
 
